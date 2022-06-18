@@ -8,11 +8,16 @@ export type NEWS = {
 };
 
 export type WEATHER = {
-  forecastday: [];
+  forecast: {
+    forecastday: [];
+  };
   date: string;
-  avgtemp_c: number;
-  condition: {
-    text: string;
-    icon: string;
+  day: {
+    condition: {
+      text: string;
+      icon: string;
+    };
+    maxtemp_c: string;
+    mintemp_c: string;
   };
 };
