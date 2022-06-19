@@ -11,6 +11,7 @@ type Props = {
 
 const Articles = styled.section`
   margin: 10px auto;
+  width: 900px;
 `;
 
 const ArticleHeading = styled.div`

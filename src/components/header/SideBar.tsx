@@ -24,10 +24,10 @@ export const SideBar: React.FC = () => {
   };
 
   return (
-    <div>
+    <div style={{ backgroundColor: "none" }}>
       <AppBar>
         <Toolbar>
-          <IconButton color="inherit" onClick={handleDrawerToggle}>
+          <IconButton onClick={handleDrawerToggle}>
             <DensityMediumIcon />
           </IconButton>
         </Toolbar>
@@ -42,7 +42,7 @@ export const SideBar: React.FC = () => {
             <ListItemIcon>
               <PublicIcon />
             </ListItemIcon>
-            <Link to="/">
+            <Link to="/" onClick={handleDrawerToggle}>
               <ListItemText primary="HeadLine" />
             </Link>
           </ListItem>
@@ -50,32 +50,32 @@ export const SideBar: React.FC = () => {
             <ListItemIcon>
               <BusinessIcon />
             </ListItemIcon>
-            <Link to="Business">
-              <ListItemText secondary="Business" />
+            <Link to="Business" onClick={handleDrawerToggle}>
+              <ListItemText primary="Business" />
             </Link>
           </ListItem>
           <ListItem>
             <ListItemIcon>
               <SportsCricketIcon />
             </ListItemIcon>
-            <Link to="Sports">
-              <ListItemText secondary="Sports" />
+            <Link to="Sports" onClick={handleDrawerToggle}>
+              <ListItemText primary="Sports" />
             </Link>
           </ListItem>
           <ListItem>
             <ListItemIcon>
               <TheatersIcon />
             </ListItemIcon>
-            <Link to="Entertainment">
-              <ListItemText secondary="Entertainment" />
+            <Link to="Entertainment" onClick={handleDrawerToggle}>
+              <ListItemText primary="Entertainment" />
             </Link>
           </ListItem>
           <ListItem>
             <ListItemIcon>
               <WindPowerIcon />
             </ListItemIcon>
-            <Link to="Technology">
-              <ListItemText secondary="Technology" />
+            <Link to="Technology" onClick={handleDrawerToggle}>
+              <ListItemText primary="Technology" />
             </Link>
           </ListItem>
         </List>

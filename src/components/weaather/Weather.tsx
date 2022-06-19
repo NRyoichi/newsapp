@@ -9,12 +9,13 @@ const WeatherSection = styled.section`
   border-radius: 15px;
   padding: 0 20px 0 20px;
   margin: 30px 20px 0 20px;
+  width: 900px;
   h1 {
     font-weight: 1000;
     font-size: 16px;
-    color: rgb(233, 163, 163);
+    color: black;
     padding: 12px 0;
-    border-bottom: 1px solid rgba(150, 113, 113, 0.5);
+    border-bottom: 1px solid black;
   }
 `;
 const WeatherTop = styled.div`
